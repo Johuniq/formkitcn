@@ -204,7 +204,7 @@ const BuilderPage = () => {
     setInitialized(true);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const saveTimer = useRef<ReturnType<typeof setTimeout>>();
+  const saveTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
   useEffect(() => {
     if (!initialized) return;
     setSaveStatus("saving");
