@@ -1,7 +1,8 @@
 import Providers from "@/components/Providers";
-import Analytics, { GtmNoScript } from "@/components/seo/Analytics";
+import { GtmNoScript } from "@/components/seo/Analytics";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/lib/seo-config";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
